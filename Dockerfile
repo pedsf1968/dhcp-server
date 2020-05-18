@@ -22,7 +22,9 @@ RUN apt-get update \
 && apt-get install tcpdump -y \
 && apt-get install traceroute -y \
 && apt-get install scapy -y \
-&& apt-get install isc-dhcp-server -y 
+&& apt-get install isc-dhcp-server -y \
+&& apt-get install isc-dhcp-client -y \
+&& apt-get install resolvconf
 
 
 ENTRYPOINT /tmp/start.sh && /bin/bash
